@@ -26,10 +26,10 @@ Module.register('MMM-LiveNotes', {
 
 		if(this.message !== ''){
 			let message = document.createElement('span');
-			message.innerHTML = '<li>' + this.message + '</li>';
+			message.innerHTML = '<li>' + this.message + '</li><br><hr>';
 			wrapper.appendChild(message);
 		}
-		
+
 		return wrapper;
 	},
 
