@@ -1,7 +1,7 @@
 
 
 Module.register('MMM-LiveNotes', {
-	message: '',
+	message: 'There is no note set.',
 
 	defaults:{
 		title: 'Current Notes'
@@ -26,7 +26,7 @@ Module.register('MMM-LiveNotes', {
 
 		if(this.message !== ''){
 			let message = document.createElement('span');
-			message.innerHTML = '<li>' + this.message + '</li><br><hr>';
+			message.innerHTML = '<li>' + this.message + '</li><hr>';
 			wrapper.appendChild(message);
 		}
 
