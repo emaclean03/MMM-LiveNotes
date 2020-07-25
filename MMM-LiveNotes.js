@@ -24,9 +24,12 @@ Module.register('MMM-LiveNotes', {
 			wrapper.appendChild(title);
 		}
 
-		let message = document.createElement('p');
-		message.innerHTML = this.message;
-		wrapper.appendChild(message);
+		if(this.message !== ''){
+			let message = document.createElement('span');
+			message.innerHTML = '<li>' + this.message + '</li>';
+			wrapper.appendChild(message);
+		}
+		
 		return wrapper;
 	},
 
