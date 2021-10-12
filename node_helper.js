@@ -7,7 +7,7 @@ const url = require("url");
 const path = require('path');
 
 module.exports = NodeHelper.create({
-
+		//hacktoberfest stuff.
 	socketNotificationReceived: function(notification, payload){
 		/*Sends the payload back to broadcast to clients*/
 		if(notification === 'test'){
