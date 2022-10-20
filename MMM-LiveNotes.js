@@ -17,7 +17,7 @@ Module.register('MMM-LiveNotes', {
 		/*Create our div*/
 		let wrapper = document.createElement('div');
 
-		/*Create the title if set*/
+		/*Create the title if set*/ //Octobverfest
 		if(this.config.title){
 			let title = document.createElement('header');
 			title.innerHTML = this.config.title || this.name;
